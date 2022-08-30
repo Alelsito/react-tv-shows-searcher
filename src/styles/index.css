@@ -1,0 +1,39 @@
+/* App.jsx */
+
+body {
+  min-height: 100vh;
+  background-image: url(../assets/first_page/background-1.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Searcher.jsx */
+
+h1 {
+  color: white;
+}
+
+.input-search {
+  position: relative;
+  padding: 15px 20px 15px 20px;
+  width: 400px;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.button-search {
+  background-color: white;
+  border: none;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 345px;
+}
+
+i {
+  color: #c53333;
+}
