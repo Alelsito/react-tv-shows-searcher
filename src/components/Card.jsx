@@ -1,8 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Card = ({ image, name }) => {
+const Card = ({ image, name, id }) => {
   return (
-    <img src={image?.original} className='card-image' alt={name} />
+    <Link to={`/pelicula/${id}`}>
+      <img src={image?.original} className='card-image' alt={name} />
+    </Link>
   )
 }
 
