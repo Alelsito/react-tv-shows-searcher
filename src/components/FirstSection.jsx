@@ -20,7 +20,7 @@ const FirstSection = ({ showData }) => {
       <div className='row'>
         <div className='card' style={{ width: '25rem' }}>
           <ul className='list-group list-group-flush'>
-            <li className='list-group-item'>Network: {showData.network.country.code}</li>
+            <li className='list-group-item'>Network: {showData.network === null ? showData.network : showData.network.country.code}</li>
             <li className='list-group-item'>Language: {showData.language}</li>
             <li className='list-group-item'>Status: {showData.status}</li>
             <li className='list-group-item'>Show Type: {showData.type}</li>
