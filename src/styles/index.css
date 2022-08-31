@@ -1,8 +1,12 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 /* App.jsx */
 
 body {
   height: 100%;
   width: 100%;
+  /* background-color: rgb(0, 0, 0); */
   background-image: url(../assets/first_page/background-1.jpg);
   background-size: cover;
 }
@@ -17,19 +21,30 @@ body {
 
 /* Searcher.jsx */
 
-h1 {
+.searcher-title {
   color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
 }
 
 .input-search {
   position: relative;
-  padding: 15px 20px 15px 20px;
   width: 400px;
-  letter-spacing: 1px;
+  padding: 15px 20px 15px 20px;
   border: none;
-  border-radius: 5px;
   outline: none;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 1px;
+  transition: 300ms;
+}
+
+.input-search:focus {
+  outline: none;
+  box-shadow: 0.1rem 0.5rem 2.5rem #5e35b1;
 }
 
 .button-search {
@@ -41,7 +56,7 @@ h1 {
 }
 
 i {
-  color: #c53333;
+  color: #5e35b1;
 }
 
 /* Card.jsx */
@@ -51,7 +66,8 @@ i {
 }
 
 .cards {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   background: rgba(0, 0, 0, 0.199);
 }
 
@@ -59,4 +75,159 @@ i {
   max-width: 100%;
   max-height: 18rem;
   box-shadow: rgb(0 0 0) 0px 14px 28px, rgb(0 0 0 / 75%) 0px 10px 10px;
+}
+
+/* -NotFound.jsx */
+
+.container-ghost {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin-top: -40px;
+}
+
+.ghost-copy {
+  width: 50%;
+  height: 53%;
+  left: 25%;
+  top: 10%;
+  position: absolute;
+  border-radius: 50% 50% 0 0;
+  background: white;
+  border: 1px solid black;
+  border-bottom: none;
+  animation: float 2s ease-out infinite;
+  z-index: 0;
+}
+
+.one,
+.two,
+.three,
+.four {
+  position: absolute;
+  background: white;
+  top: 85%;
+  width: 26%;
+  height: 23%;
+  border: 1px solid grey;
+  z-index: 0;
+}
+
+.one {
+  border-radius: 0 0 100% 30%;
+  left: -1px;
+}
+
+.two {
+  left: 23%;
+  border-radius: 0 0 50% 50%;
+}
+
+.three {
+  left: 50%;
+  border-radius: 0 0 50% 50%;
+}
+
+.four {
+  left: 74.5%;
+  border-radius: 0 0 30% 100%;
+}
+
+.ghost {
+  width: 50%;
+  height: 53%;
+  left: 25%;
+  top: 10%;
+  position: absolute;
+  border-radius: 50% 50% 0 0;
+  background: white;
+  border: 1px solid grey;
+  border-bottom: none;
+  animation: float 2s ease-out infinite;
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  top: 20%;
+}
+
+.eye,
+.eye-right {
+  position: absolute;
+  background: black;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  top: 40%;
+}
+
+.eye {
+  left: 25%;
+}
+
+.eye-right {
+  right: 25%;
+}
+
+.mouth {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  width: 10px;
+  height: 10px;
+  border: 3px solid;
+  border-radius: 50%;
+  border-color: black;
+  transform: rotate(45deg);
+}
+
+.shadow {
+  position: absolute;
+  width: 30%;
+  height: 7%;
+  background: #957fc1;
+  left: 35%;
+  top: 80%;
+  border-radius: 50%;
+  animation: scale 2s infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+.bottom {
+  margin-top: 10px;
+}
+
+/*text styling*/
+.text-error {
+  color: white;
+  text-align: center;
+  font-size: 7em;
+  margin: 0;
+  text-shadow: -1px 0 gray, 0 1px grey, 1px 0 grey, 0 -1px grey;
+}
+
+.text-error-info {
+  font-size: 2em;
+  text-align: center;
+  color: #957fc1;
+  font-weight: 900;
 }
