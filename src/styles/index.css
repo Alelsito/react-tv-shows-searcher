@@ -1,9 +1,14 @@
 /* App.jsx */
 
 body {
-  min-height: 100vh;
+  height: 100%;
+  width: 100%;
   background-image: url(../assets/first_page/background-1.jpg);
   background-size: cover;
+}
+
+.root {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,6 +29,7 @@ h1 {
   border: none;
   border-radius: 5px;
   outline: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .button-search {
@@ -36,4 +42,21 @@ h1 {
 
 i {
   color: #c53333;
+}
+
+/* Card.jsx */
+
+.container {
+  margin: 0;
+}
+
+.cards {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background: rgba(0, 0, 0, 0.199);
+}
+
+.card-image {
+  max-width: 100%;
+  max-height: 18rem;
+  box-shadow: rgb(0 0 0) 0px 14px 28px, rgb(0 0 0 / 75%) 0px 10px 10px;
 }

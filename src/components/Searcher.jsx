@@ -10,7 +10,7 @@ const Searcher = ({ onCreate }) => {
 
   return (
     <div className='container d-flex flex-column'>
-      <div className='row mb-2'>
+      <div className='row mb-3'>
         <div className='col'>
           <h1 className='text-center'> ¿Qué serie deseas buscar? </h1>
         </div>
