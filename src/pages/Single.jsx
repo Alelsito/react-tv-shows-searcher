@@ -1,24 +1,28 @@
-import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import axiosData from '../services/axiosData'
+import FirstSection from '../components/FirstSection'
+import useGetData from '../hooks/useGetData'
 
 const Single = () => {
   const { idShow } = useParams()
+  console.log(idShow)
 
-  const [data, setData] = useState(null)
+  // Primera sección
+  const show = useGetData(`https://api.tvmaze.com/shows/${idShow}`)
+  console.log(show)
 
-  useEffect(() => {
-    const asyncData = async () => {
-      const res = await axiosData(`https://api.tvmaze.com/shows/${idShow}`)
-      setData(res)
-    }
-    asyncData()
-  }, [])
+  //   Segunda sección
+  const seasons = useGetData(`https://api.tvmaze.com/shows/${idShow}/seasons`)
+  console.log(seasons)
 
-  console.log(data)
+  //   -each seasonId
+  seasons.map((season, index) => console.log(season.id, index))
 
   return (
-    <div>Single</div>
+    <>
+      {
+        show.length !== 0 && <FirstSection showData={show} />
+      }
+    </>
   )
 }
 
