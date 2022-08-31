@@ -1,15 +1,11 @@
 import React from 'react'
 
 const ThirdSection = ({ cast }) => {
-  console.log(cast)
+  // console.log(cast)
   return (
     <>
       <img
-        src={
-            cast.character.image !== null
-              ? cast.character.image.original
-              : cast.person.image.original
-        }
+        src={cast.character.image === null ? (cast.person.image === null ? <> </> : cast.person.image.original) : cast.character.image.original}
         className='card-img-top' alt='...'
       />
       <div className='card-body'>
