@@ -1,26 +1,34 @@
 import { useParams } from 'react-router-dom'
+
+// Section
 import FirstSection from '../components/FirstSection'
+import SecondSection from '../components/SecondSection'
+
+// Hooks
 import useGetData from '../hooks/useGetData'
 
 const Single = () => {
   const { idShow } = useParams()
-  console.log(idShow)
 
   // Primera sección
   const show = useGetData(`https://api.tvmaze.com/shows/${idShow}`)
-  console.log(show)
 
   //   Segunda sección
   const seasons = useGetData(`https://api.tvmaze.com/shows/${idShow}/seasons`)
-  console.log(seasons)
-
-  //   -each seasonId
-  seasons.map((season, index) => console.log(season.id, index))
 
   return (
     <>
       {
         show.length !== 0 && <FirstSection showData={show} />
+      }
+      {
+        seasons.length !== 0 &&
+          <div className='accordion container mt-2 mb-2' id='accordionExample'>
+            {seasons.map((season, index) => (<div className='accordion-item' key={index}> <SecondSection {...season} /> </div>))}
+          </div>
+      }
+      {
+
       }
     </>
   )
