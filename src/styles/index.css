@@ -231,3 +231,101 @@ i {
   color: #957fc1;
   font-weight: 900;
 }
+
+/* First section */
+
+/* Movie card */
+
+.first-section-cards {
+  max-width: 70rem;
+}
+
+.movie_card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.4s;
+  box-shadow: 0px 0px 150px -45px rgba(255, 51, 0, 0.5);
+}
+
+.movie_card:hover {
+  transform: scale(1.02);
+  transition: all 0.4s;
+  box-shadow: 0px 0px 120px -55px rgba(255, 51, 0, 0.5);
+}
+
+/* Info section */
+
+.info_section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-blend-mode: multiply;
+  z-index: 2;
+  border-radius: 10px;
+  background: linear-gradient(to right, #0d0d0c 50%, transparent 100%);
+}
+
+/* Movie Header */
+
+.movie_header {
+  position: relative;
+  margin: 30px 10px;
+  width: 100%;
+}
+
+/* Locandina */
+
+.locandina {
+  height: 200px;
+  box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+.show-title {
+  color: #fff;
+  font-weight: 400;
+}
+
+.network-language {
+  color: #9ac7fa;
+  font-weight: 400;
+}
+
+.minutes {
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.type {
+  display: inline-block;
+  color: #cee4fd;
+  margin: 0;
+}
+
+/* Movie desc */
+
+.movie_desc {
+  width: 100%;
+  padding: 25px;
+}
+
+.text {
+  color: #cfd6e1;
+  margin: 0;
+}
+
+/* Blur */
+
+.blur_back {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.bright_back {
+  background: rgb(226 94 255 / 47%);
+}

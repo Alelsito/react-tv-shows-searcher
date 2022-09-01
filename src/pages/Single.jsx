@@ -36,7 +36,9 @@ const Single = () => {
             <div className='row d-flex justify-content-center'>
               {
                 cast.map((character, index) => (
-                  <div className='card p-0 m-3' style={{ width: '12rem' }} key={index}> <ThirdSection cast={character} /> </div>
+                  <div className='card p-0 m-3' style={{ width: '12rem' }} key={index}>
+                    <ThirdSection cast={character} />
+                  </div>
                 ))
               }
             </div>
