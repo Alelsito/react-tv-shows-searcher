@@ -34,11 +34,11 @@ const Single = () => {
       }
       {
         cast.length !== 0 &&
-          <div className='container mt-4 mb-4'>
+          <div className='container third-section-container mt-4 mb-4'>
             <div className='row d-flex justify-content-center'>
               {
                 cast.map((character, index) => (
-                  <div className='card p-0 m-3' style={{ width: '12rem' }} key={index}>
+                  <div className='card third-secetion-container-card d-flex flex-row p-0 m-3' style={{ width: '14rem' }} key={index}>
                     <ThirdSection cast={character} />
                   </div>
                 ))

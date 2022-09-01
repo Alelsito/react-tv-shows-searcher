@@ -34,7 +34,7 @@ function App () {
         : (
           <div className='container mt-4 p-2 cards'>
             {' '}
-            <div className='row  d-flex justify-content-center'>
+            <div className='row d-flex justify-content-center'>
               {' '}
               {data.map((show, index) => (
                 <div key={index} className='col-2 m-3'>
