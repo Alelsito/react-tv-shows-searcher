@@ -20,7 +20,7 @@ const FirstSection = ({ showData }) => {
                   </div>
                   <div className='col'>
                     <h4 className='network-language'>
-                      {showData.network === null ? showData.network : showData.network.country.code},{' '}
+                      {showData.network === null ? showData.network : showData.network.country.code}{' | '}
                       {showData.language}
                     </h4>
                   </div>
