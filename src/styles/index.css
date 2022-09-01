@@ -1,14 +1,12 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-/* App.jsx */
 
 body {
   height: 100%;
   width: 100%;
-  background-color: white;
-  background-image: url(../assets/first_page/background-1.jpg);
-  background-size: contain;
+  background-image: url(../assets/first_page/background-1.jpg) !important;
+  background-size: contain !important;
 }
 
 .root {
@@ -18,6 +16,8 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
+/* PAGE APP.JSX */
 
 /* Searcher.jsx */
 
@@ -78,7 +78,7 @@ i {
   box-shadow: rgb(0 0 0) 0px 14px 28px, rgb(0 0 0 / 75%) 0px 10px 10px;
 }
 
-/* -NotFound.jsx */
+/* NotFound.jsx */
 
 .container-ghost {
   position: relative;
@@ -217,7 +217,6 @@ i {
   margin-top: 10px;
 }
 
-/*text styling*/
 .text-error {
   color: white;
   text-align: center;
@@ -231,187 +230,4 @@ i {
   text-align: center;
   color: #957fc1;
   font-weight: 900;
-}
-
-/* First section */
-
-/* Movie card */
-
-.first-section-cards {
-  max-width: 70rem;
-}
-
-.movie_card {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  border-radius: 10px;
-  transition: all 0.4s;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.movie_card:hover {
-  transform: scale(1.02);
-  transition: all 0.4s;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}
-
-/* Info section */
-
-.info_section {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-blend-mode: multiply;
-  z-index: 2;
-  border-radius: 10px;
-  background: linear-gradient(to right, #0d0d0c 50%, transparent 100%);
-}
-
-/* Movie Header */
-
-.movie_header {
-  position: relative;
-  margin: 30px 10px;
-  width: 100%;
-}
-
-/* Locandina */
-
-.locandina {
-  height: 200px;
-  box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5);
-}
-
-.show-title {
-  color: #fff;
-  font-weight: 400;
-}
-
-.network-language {
-  color: #9ac7fa;
-  font-weight: 400;
-}
-
-.minutes {
-  color: #fff;
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid rgba(255, 255, 255, 0.13);
-}
-
-.type {
-  display: inline-block;
-  color: #cee4fd;
-  margin: 0;
-}
-
-/* Movie desc */
-
-.movie_desc {
-  width: 100%;
-  padding: 25px;
-}
-
-.text {
-  color: #cfd6e1;
-  margin: 0;
-}
-
-/* Blur */
-
-.blur_back {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.bright_back {
-  background: rgb(226 94 255 / 47%);
-}
-
-/* Second section */
-
-.accordion {
-  --bs-accordion-bg: #00000099;
-  --bs-accordion-active-bg: rgb(37 4 45 / 63%);
-  padding: 0;
-  /* box-shadow: 0.1rem 0.5rem 2.5rem rgba(47, 5, 58, 0.808); */
-}
-
-.accordion-item {
-  border-bottom: solid 0.5px rgba(226, 94, 255, 0.089);
-}
-
-.second-section-container {
-  max-width: 67rem;
-}
-.second-section-container {
-  transition: all 0.4s;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.second-section-container:hover {
-  transform: scale(1.02);
-  transition: all 0.4s;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}
-
-.second-section-season-text {
-  color: #9ac7fa;
-  font-size: 1.12rem;
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 5px;
-  font-weight: 400;
-}
-
-.table-header {
-  font-size: 1rem;
-}
-
-/* Third Section */
-
-.third-section-container {
-  max-width: 70rem;
-}
-
-.third-secetion-container-card {
-  transition: all 0.4s;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.third-secetion-container-card:hover {
-  transform: scale(1.07);
-  transition: all 0.4s;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}
-
-.card {
-  background-color: #000000c4;
-  --bs-card-border-color: none;
-  border-radius: 0px 10px 0px 0px;
-}
-
-.card-body {
-  padding: 0;
-  writing-mode: vertical-rl;
-  transform: rotate(-180deg);
-}
-
-.card-title {
-  margin-top: 0.4rem;
-  margin-bottom: 0;
-  margin-right: 0.2rem;
-  margin-left: 0.2rem;
-}
-
-.card-subtitle {
-  margin-top: 0.4rem;
-  margin-bottom: 0;
-  margin-right: 0;
-  margin-left: 0;
 }

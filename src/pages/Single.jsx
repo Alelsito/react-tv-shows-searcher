@@ -6,6 +6,9 @@ import FirstSection from '../components/FirstSection'
 import SecondSection from '../components/SecondSection'
 import ThirdSection from '../components/ThirdSection'
 
+// Styles
+import '../styles/single.css'
+
 // Hooks
 import useGetData from '../hooks/useGetData'
 
