@@ -27,10 +27,13 @@ const FirstSection = ({ showData }) => {
                   </div>
                   <div className='col'>
                     <div className='row'>
-                      <div className='col-2 d-flex align-items-center'>
-                        <span className='minutes'>{showData.rating.average}</span>
+                      <div className='col-2 d-flex align-items-center me-3'>
+                        <span className='minutes d-flex flex-row align-items-center'>
+                          {showData.rating.average}
+                          <i class='fa-regular fa-star ms-1' />
+                        </span>
                       </div>
-                      <div className='col-10 d-flex justify-content-start align-items-center p-0'>
+                      <div className='col-9 d-flex justify-content-start align-items-center p-0'>
                         <div className='type row d-flex flex-row'>{showData.genres.map((genre, index) => <div className='col pe-0' key={index}> {genre} </div>)}</div>
                       </div>
                     </div>
