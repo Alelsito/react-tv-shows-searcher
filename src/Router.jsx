@@ -1,5 +1,8 @@
+// Router
 import { Routes, Route, Navigate } from 'react-router-dom'
-import NotFound from './components/NotFound'
+
+// Components
+import NotFound from './components/common/NotFound'
 
 // Pages
 import App from './pages/App'
