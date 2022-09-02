@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Utils
-import removeTags from '../utils/removeTags'
+import removeTags from '../../utils/removeTags'
 
 const FirstSection = ({ showData }) => {
   return (

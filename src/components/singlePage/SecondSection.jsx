@@ -4,7 +4,7 @@ import React from 'react'
 import Episode from './Episode'
 
 // Utils
-import stringToNumber from '../utils/stringToNumber'
+import stringToNumber from '../../utils/stringToNumber'
 
 const SecondSection = ({ number, _links }) => {
   return (
