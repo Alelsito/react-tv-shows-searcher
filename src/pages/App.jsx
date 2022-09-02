@@ -1,7 +1,12 @@
+// Use effect
 import { useEffect, useState } from 'react'
-import Card from '../components/Card'
-import NotFound from '../components/NotFound'
-import Searcher from '../components/Searcher'
+
+// Components
+import Card from '../components/appPage/Card'
+import NotFound from '../components/common/NotFound'
+import Searcher from '../components/appPage/Searcher'
+
+// Services
 import axiosData from '../services/axiosData'
 
 // Styles

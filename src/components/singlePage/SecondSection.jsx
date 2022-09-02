@@ -1,10 +1,10 @@
 import React from 'react'
 
+// Componentes
+import Episode from './Episode'
+
 // Utils
 import stringToNumber from '../utils/stringToNumber'
-
-// Componentes
-import Episode from './common/Episode'
 
 const SecondSection = ({ number, _links }) => {
   return (
@@ -17,7 +17,6 @@ const SecondSection = ({ number, _links }) => {
         </button>
       </h2>
       <div id={`collapse${stringToNumber(number)}`} className='accordion-collapse collapse' aria-labelledby={`heading${stringToNumber(number)}`} data-bs-parent='#accordionExample'>
-        {/* Table header */}
         <table className='table ms-1'>
           <thead>
             <tr>
@@ -27,8 +26,6 @@ const SecondSection = ({ number, _links }) => {
               <th scope='col'>Score</th>
             </tr>
           </thead>
-
-          {/* Table body */}
           <tbody>
             <Episode urlEpisodes={_links.self} />
           </tbody>

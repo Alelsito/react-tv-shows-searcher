@@ -1,13 +1,13 @@
-// useParams
-import { useParams } from 'react-router-dom'
-
-// Sections
-import FirstSection from '../components/FirstSection'
-import SecondSection from '../components/SecondSection'
-import ThirdSection from '../components/ThirdSection'
+// Components
+import FirstSection from '../components/singlePage/FirstSection'
+import SecondSection from '../components/singlePage/SecondSection'
+import ThirdSection from '../components/singlePage/ThirdSection'
 
 // Styles
 import '../styles/single.css'
+
+// useParams
+import { useParams } from 'react-router-dom'
 
 // Hooks
 import useGetData from '../hooks/useGetData'
