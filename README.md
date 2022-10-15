@@ -91,7 +91,7 @@ This is a solution to the project ✨ TV-Shows-Searcher | Buscador-De-Series ✨
 
 ### Links
 
-- GitHub Repository: [react-buscador-de-series-github](https://github.com/Alelsito/react-buscador-de-series)
+- GitHub Repository: [react-tv-shows-searcher-github](https://github.com/Alelsito/react-tv-shows-searcher)
 - Live Site URL(Netlify): [react-buscador-de-series-netlify](https://react-buscador-de-series.netlify.app/)
 
 ## My process
