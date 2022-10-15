@@ -1,6 +1,6 @@
-# Dev.f - React-Buscador-De-Series
+# Dev.f - React-TV-Shows-Searcher | React-Buscador-De-Series 🔍📺🔎
 
-This is a solution to the project ✨ Buscador De Series ✨ of the [Kata Frontend](https://www.devf.la/master/encoding/mx).\
+This is a solution to the project ✨ TV-Shows-Searcher | Buscador-De-Series ✨ of the [Kata Frontend](https://www.devf.la/master/encoding/mx).\
 [Dev.f](https://www.devf.la/) offers an innovative solution to educational inclusion with EdTech programs that help people become software developers and obtain technological skills in order to obtain high-quality job opportunities in an agile and accessible way. 
 
 ## Table of contents
@@ -41,7 +41,7 @@ This is a solution to the project ✨ Buscador De Series ✨ of the [Kata Fronte
 
 1. At first, displayed on the page you can only seen a seacher where you can write to search whatever TV Show you want.
 
-    - If the search does not match any posible result, instead of that the page will show an 404 error
+    - If the search does not match any posible result, instead of that the page will show an 404 error.
     - If the search match with any possible result, you will see them as cards displayed in a section under of the searcher. (*Ten (10) is the maximum possible TV Shows that the page will throw*).
 
 2. Of all the options, you can select one to accede to the details of the selected TV Show.
@@ -64,7 +64,7 @@ This is a solution to the project ✨ Buscador De Series ✨ of the [Kata Fronte
         - Date
         - Name
         - Score
-    3. Third section: Shows the characters and actors names, and also a profile image
+    3. Third section: Shows the characters and actors names, and also a profile image.
 
 ### Screenshot
 
@@ -101,7 +101,6 @@ This is a solution to the project ✨ Buscador De Series ✨ of the [Kata Fronte
 - HTML
 - JS
 - CSS
-- CSS Flexbox
 - [React](https://reactjs.org/) - JS library
 - [Vite](https://vitejs.dev/) - Build frontend tool (in this case for React)
 - [Bootswatch](https://bootswatch.com/) - For styles
@@ -111,27 +110,22 @@ This is a solution to the project ✨ Buscador De Series ✨ of the [Kata Fronte
 
 ### Skills
 
+- APIs
+- [Axios](https://axios-http.com/docs/intro)
 - React library
-- [React-Router-Dom](https://reactrouter.com/en/main)
 - React Hooks:
     - [useState](https://reactjs.org/docs/hooks-state.html)
     - [useEffect](https://reactjs.org/docs/hooks-effect.html)
-    - [useParams](https://reactrouter.com/en/main/hooks/use-params)
     - [Custom Hooks](https://reactjs.org/docs/hooks-custom.html)
-- APIs
-- [Axios](https://axios-http.com/docs/intro)
+- [React-Router-Dom](https://reactrouter.com/en/main)
+    - [Navigate](https://reactrouter.com/en/main/components/navigate)
+    - [Link](https://reactrouter.com/en/main/components/link)
+    - [useParams](https://reactrouter.com/en/main/hooks/use-params)
 - [NodeJS](https://nodejs.org/en/)
 - [npm](https://www.npmjs.com/)
 - [StandardJs](https://standardjs.com/) - as linter
 
-- Async functions, for example:
-
-```js
-    const axiosData = async (url) => {
-      const { data } = await axios.get(url)
-      return data
-    }
-```
 ## Author
 
 - Github - [@Alelsito](https://github.com/Alelsito)
+- LinkdIn - [Hugo Alejandro López Blanco](https://www.linkedin.com/in/hugolopezblanco/)
